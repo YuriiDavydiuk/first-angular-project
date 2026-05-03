@@ -11,10 +11,12 @@ export interface UserLoginResponse {
   token: string;
   userId: number;
   email: string;
+  accessToken?: string;
 }
 
 export interface UserRegisterResponse {
   userId: number;
   email: string;
-  createdAt: string; // ISO дата
+  createdAt: string;
+  accessToken?: string; // ISO дата
 }
