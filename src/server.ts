@@ -57,11 +57,3 @@ if (isMainModule(import.meta.url) || process.env['pm_id']) {
  * Request handler used by the Angular CLI (for dev-server and during build) or Firebase Cloud Functions.
  */
 export const reqHandler = createNodeRequestHandler(app);
-
-/**
- * Функція для пререндерингу динамічних параметрів
- * Angular використає її під час білду, щоб згенерувати статичні сторінки
- */
-export function getPrerenderParams() {
-  return [{ categoryId: 'angular' }, { categoryId: 'react' }, { categoryId: 'nextjs' }];
-}
